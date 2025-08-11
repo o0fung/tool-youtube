@@ -9,11 +9,25 @@ A command-line tool for downloading YouTube videos, audio, and subtitles using P
 - Print rich metadata for any YouTube video
 - Flexible flag combinations for custom downloads
 
+
 ## Requirements
 - Python 3.7+
-- yt-dlp (`pip install yt-dlp`)
+- Required Python packages: Install with
+	```sh
+	pip install -r requirements.txt
+	```
 - ffmpeg (for best quality and format conversion)
-- macOS: Install ffmpeg with Homebrew: `brew install ffmpeg`
+- macOS: Install ffmpeg with Homebrew:
+	```sh
+	brew install ffmpeg
+	```
+
+### How to install Homebrew (macOS)
+If you don't have Homebrew, open Terminal and run:
+```sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+See the official guide: [brew.sh](https://brew.sh)
 
 ## Usage
 ```sh
@@ -47,4 +61,3 @@ python youtube_dl.py "https://www.youtube.com/watch?v=H7cIkLZH8UA" -vs
 
 ## License
 MIT
-# tool-youtube
