@@ -10,24 +10,45 @@ A command-line tool for downloading YouTube videos, audio, and subtitles using P
 - Flexible flag combinations for custom downloads
 
 
-## Requirements
-- Python 3.7+
-- Required Python packages: Install with
-	```sh
-	pip install -r requirements.txt
-	```
-- ffmpeg (for best quality and format conversion)
-- macOS: Install ffmpeg with Homebrew:
-	```sh
-	brew install ffmpeg
-	```
 
-### How to install Homebrew (macOS)
+## Getting Started (Step-by-Step for Beginners)
+
+### 1. Install Git
+If you don't have git, download and install it from:
+- [Git for Windows](https://git-scm.com/download/win)
+- [Git for macOS](https://git-scm.com/download/mac)
+- [Git for Linux](https://git-scm.com/download/linux)
+
+### 2. Clone this Repository
+Open Terminal (or Command Prompt on Windows) and run:
+```sh
+git clone https://github.com/o0fung/tool-youtube.git
+cd tool-youtube
+```
+
+### 3. Install Homebrew (macOS only)
 If you don't have Homebrew, open Terminal and run:
 ```sh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 See the official guide: [brew.sh](https://brew.sh)
+
+### 4. Install ffmpeg
+- **macOS:**
+	```sh
+	brew install ffmpeg
+	```
+- **Windows:** Download from [ffmpeg.org/download.html](https://ffmpeg.org/download.html) and follow the instructions.
+- **Linux:**
+	```sh
+	sudo apt-get install ffmpeg
+	```
+
+### 5. Install Python Packages
+Make sure you have Python 3.7 or newer. Then run:
+```sh
+pip install -r requirements.txt
+```
 
 ## Usage
 ```sh
